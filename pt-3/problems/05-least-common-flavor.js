@@ -16,6 +16,16 @@ Least common flavor:
 
 function leastCommonFlavor(candyBag) {
   // Your code here 
+  if (Object.keys(candyBag).length === 0) {return null}
+  let min = Infinity;
+  let minName = '';
+  for (let el of Object.keys(candyBag)) {
+    if (candyBag[el] < min) {
+        min = candyBag[el];
+        minName = el;
+    }
+  }
+  return minName;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

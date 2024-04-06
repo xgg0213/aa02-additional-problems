@@ -15,6 +15,13 @@
 
 function commonValues(obj1, obj2) {
   // Your code here 
+  let key1 = Object.values(obj1);
+  let key2 = Object.values(obj2);
+
+  let res = key1.filter(el => {
+    return key2.includes(el);
+  })
+  return res;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

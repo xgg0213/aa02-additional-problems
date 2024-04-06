@@ -15,6 +15,13 @@ All the marbles:
 
 function allTheMarbles(...marbles) {
   // Your code here 
+  let sum = 0;
+  if (marbles.length === 0) {return sum}
+  for (let el of marbles) {
+    sum += el.weight;
+  }
+  return sum;
+
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

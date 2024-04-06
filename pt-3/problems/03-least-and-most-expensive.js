@@ -14,7 +14,25 @@ Least and Most Expensive Toys:
 
 function leastAndMostExpensive(catalog) {
   // Your code here 
+  let min = Infinity;
+  let max = -Infinity;
+  let minName = '';
+  let maxName = '';
+
+  for (let el of Object.keys(catalog)) {
+    if (catalog[el] < min) {
+        min = catalog[el];
+        minName = el;
+    }
+
+    if (catalog[el] > max) {
+        max = catalog[el];
+        maxName = el;
+    }
+  }
+  return (minName + ',' + maxName).split(',');
 }
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

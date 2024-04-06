@@ -20,6 +20,15 @@
 
 const itemsWithinBudget = (budget, items) => {
     // Your code here 
+    let res = [];
+
+    let list = items.filter(el => el.price <= budget)
+
+    for (let el of list) {
+        res.push(el.name);
+    }
+
+    return res;
 }
 
 

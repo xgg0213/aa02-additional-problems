@@ -11,6 +11,17 @@
 
 function characterCount(string) {
   // Your code here 
+  let obj = {};
+
+  for (let el of string) {
+    let keys = Object.keys(obj);
+    if (!keys.includes(el)) {
+        obj[el] = 1;
+    } else {
+        obj[el] += 1;
+    }
+  }
+  return obj;
 }
 
 
