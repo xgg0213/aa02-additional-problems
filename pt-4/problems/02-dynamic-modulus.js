@@ -22,6 +22,7 @@
 
 function dynamicModulus(num) {
   // Your code here 
+  return func = (n) => n % num;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

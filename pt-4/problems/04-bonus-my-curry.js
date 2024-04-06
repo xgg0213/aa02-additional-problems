@@ -19,6 +19,17 @@
 */
 
 // Your code here 
+const myCurry = (func, numArgs) => {
+  let count = 0;
+  let list = [];
+  return func1 = (n) => {
+    count += 1;
+    list.push(n);
+    let res = func(...list);
+    if (count < numArgs) {return func1}
+    if (count === numArgs) {return res;}
+  }
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {

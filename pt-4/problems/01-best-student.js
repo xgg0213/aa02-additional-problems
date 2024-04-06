@@ -18,6 +18,19 @@
 
 const bestStudent = (...args) => {
     // Your code here 
+    let max = -Infinity;
+    let maxName = '';
+
+    if (args.length === 0) {return null}
+
+    for (let el of args) {
+        if (el.points > max) {
+            max = el.points;
+            maxName = el.name;
+        }
+    }
+
+    return maxName;
 }
 
 

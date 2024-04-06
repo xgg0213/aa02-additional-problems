@@ -14,6 +14,19 @@
 */
 
 // Your code here 
+const discountPrices = (prices, discounts) => {
+    let res = [];
+    for (let i = 0; i < prices.length; i++) {
+        let result = prices[i]* (1-discounts[i])
+        res.push(result);
+        res[i] = res[i].toFixed(2);
+    }
+
+    let res1 = res.map(el => '$'+el.toString());
+
+    return res1;
+}
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {
